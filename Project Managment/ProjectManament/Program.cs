@@ -1,7 +1,9 @@
-﻿using System;
+﻿using ProjectManament.usergroup;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+
 
 namespace ProjectManament
 {
@@ -15,7 +17,7 @@ namespace ProjectManament
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new frm_UserGroup());
         }
     }
 }

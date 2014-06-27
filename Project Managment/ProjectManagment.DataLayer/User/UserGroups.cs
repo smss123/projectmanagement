@@ -8,5 +8,14 @@ namespace ProjectManagment.DataLayer
         public string  GroupName { get; set; }
         public string  GroupDescription { get; set; }
         public  virtual List<SystemUser> Users { get; set; }
+        public virtual List<GroupPermession> Permessions { get; set; }
+        public UserGroups()
+        {
+            Permessions = new List<GroupPermession>();
+        }
+
+
+       
+
     }
 }

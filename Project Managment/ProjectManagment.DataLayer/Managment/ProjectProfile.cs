@@ -13,10 +13,11 @@ namespace ProjectManagment.DataLayer.Managment
         public string  Status { get; set; }
         public int progress { get; set; }
         public virtual Accountant.Account  ProjectAccount { get; set; }
-        public List<Employee.Contracts> employees { get; set; }
+        public virtual  List<Employee.Contracts> employees { get; set; }
         public virtual List<Order.ProjectOrder> ProjectOrder { get; set; }
         public virtual List<Order.Attachment> Attachment { get; set; }
         public virtual List<Suppler.Thefinancier> Thefinancieres { get; set; }
+       
        // public virtual List<> MyProperty { get; set; }
     }
 }

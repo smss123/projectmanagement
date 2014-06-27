@@ -16,6 +16,7 @@ namespace ProjectManagment.DataLayer.Employee
         public virtual Accountant.Account   EmplyeeAccount { get; set; }
         public bool  Status { get; set; }
         public virtual  SystemUser LoginInformation { get; set; }
+        public ProjectProfile  ProjectToWork { get; set; }
       
 
 
