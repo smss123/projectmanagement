@@ -27,11 +27,8 @@ namespace ProjectManagment.Forms.UserGroup
         private void frmUserGroup_Load(object sender, EventArgs e)
         {
             BindContextMenu();
-            var q = db.Permessions;
-            foreach (var item in q)
-            {
-                checkedListBox1.Items.Add(item.PermessionName);
-            }
+          
+           
 
 
         }
@@ -43,22 +40,9 @@ namespace ProjectManagment.Forms.UserGroup
 
         void frmUserGroup_Click(object sender, EventArgs e)
         {
-            ProjectManagment.DataLayer.UserGroup g = new DataLayer.UserGroup();
-            g.GroupName = groupNameRadTextBox.Text;
-            g.GroupDescription = groupDescriptionRadTextBox.Text;
-            for (int i = 0; i < checkedListBox1.Items.Count; i++)
-            {
-                g.GroupPermessions.Add(new GroupPermession()
-                {
-                    permessions_ID = i,
-                    Value = checkedListBox1.GetItemChecked(i)
+           
 
-                });
-
-            }
-
-            db.UserGroups.Add(g);
-            db.SaveChanges();
+         
 
         }
 

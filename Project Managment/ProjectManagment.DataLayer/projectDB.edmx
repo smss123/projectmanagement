@@ -644,21 +644,6 @@
           <Property Name="BillNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="RequiarAmount" Type="Double" Nullable="false" />
           <Property Name="CashingNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="OkyProjectManager" Type="Boolean" Nullable="false" />
-          <Property Name="DateOfOkProjectManager" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="ProjectMnagerComment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="OkyFainancManager" Type="Boolean" Nullable="false" />
-          <Property Name="DateOfOkyFainancManager" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="FainancManagerComment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="OkyAuditManager" Type="Boolean" Nullable="false" />
-          <Property Name="DateOfOkyAuditManager" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="AuditManagerComment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="OkyAdministrativeManager" Type="Boolean" Nullable="false" />
-          <Property Name="DateOfOkyAdministrativeManager" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="AdministrativeManagerComment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="OkyPresident" Type="Boolean" Nullable="false" />
-          <Property Name="DateOfOkyPresident" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="PresidentComment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="ProjectSubActivity" Relationship="ProjectManagment.DataLayer.dbContextModel.ProjectSubActivityProjectExpens" FromRole="ProjectExpens" ToRole="ProjectSubActivity" />
           <NavigationProperty Name="Suppliers" Relationship="ProjectManagment.DataLayer.dbContextModel.ProjectExpensSupplier" FromRole="ProjectExpens" ToRole="Supplier" />
         </EntityType>
@@ -1424,21 +1409,6 @@
           <ScalarProperty Name="BillNumber" ColumnName="BillNumber" />
           <ScalarProperty Name="RequiarAmount" ColumnName="RequiarAmount" />
           <ScalarProperty Name="CashingNumber" ColumnName="CashingNumber" />
-          <ScalarProperty Name="OkyProjectManager" ColumnName="OkyProjectManager" />
-          <ScalarProperty Name="DateOfOkProjectManager" ColumnName="DateOfOkProjectManager" />
-          <ScalarProperty Name="ProjectMnagerComment" ColumnName="ProjectMnagerComment" />
-          <ScalarProperty Name="OkyFainancManager" ColumnName="OkyFainancManager" />
-          <ScalarProperty Name="DateOfOkyFainancManager" ColumnName="DateOfOkyFainancManager" />
-          <ScalarProperty Name="FainancManagerComment" ColumnName="FainancManagerComment" />
-          <ScalarProperty Name="OkyAuditManager" ColumnName="OkyAuditManager" />
-          <ScalarProperty Name="DateOfOkyAuditManager" ColumnName="DateOfOkyAuditManager" />
-          <ScalarProperty Name="AuditManagerComment" ColumnName="AuditManagerComment" />
-          <ScalarProperty Name="OkyAdministrativeManager" ColumnName="OkyAdministrativeManager" />
-          <ScalarProperty Name="DateOfOkyAdministrativeManager" ColumnName="DateOfOkyAdministrativeManager" />
-          <ScalarProperty Name="AdministrativeManagerComment" ColumnName="AdministrativeManagerComment" />
-          <ScalarProperty Name="OkyPresident" ColumnName="OkyPresident" />
-          <ScalarProperty Name="DateOfOkyPresident" ColumnName="DateOfOkyPresident" />
-          <ScalarProperty Name="PresidentComment" ColumnName="PresidentComment" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

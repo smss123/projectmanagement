@@ -17,7 +17,7 @@ namespace ProjectManament.usergroup
             InitializeComponent();
         }
 
-        private dbContext db = new dbContext();
+      
 
         private void FrmUserGroupLoad(object sender, EventArgs e)
         {
