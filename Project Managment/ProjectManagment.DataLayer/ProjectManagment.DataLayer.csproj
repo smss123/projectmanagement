@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ProjectManagment.DataLayer</RootNamespace>
     <AssemblyName>ProjectManagment.DataLayer</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -20,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -28,18 +30,23 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.6.1.0\lib\net40\EntityFramework.dll</HintPath>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net40\EntityFramework.dll</HintPath>
     </Reference>
-    <Reference Include="EntityFramework.SqlServer">
-      <HintPath>..\packages\EntityFramework.6.1.0\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net40\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,29 +54,100 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Accountant\Account.cs" />
-    <Compile Include="Accountant\DailyMovemnt.cs" />
-    <Compile Include="Accountant\Transaction.cs" />
-    <Compile Include="dbContext.cs" />
-    <Compile Include="Employee\Contracts.cs" />
-    <Compile Include="Employee\Employee.cs" />
-    <Compile Include="Employee\SelaryHiracy.cs" />
-    <Compile Include="Expenses\Expenses.cs" />
-    <Compile Include="Managment\ProjectActivty.cs" />
-    <Compile Include="Managment\ProjectProfile.cs" />
-    <Compile Include="Managment\ProjectSubActivity.cs" />
-    <Compile Include="Order\Attachment.cs" />
-    <Compile Include="Order\ProjectOrder.cs" />
-    <Compile Include="Suppler\Suppliers.cs" />
-    <Compile Include="Suppler\Thefinancier.cs" />
-    <Compile Include="User\GroupPermession.cs" />
+    <Compile Include="Account.cs">
+      <DependentUpon>projectDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Attachment.cs">
+      <DependentUpon>projectDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Contract.cs">
+      <DependentUpon>projectDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DailyMovemnt.cs">
+      <DependentUpon>projectDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <DependentUpon>projectDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Permession.cs">
+      <DependentUpon>projectDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectActivity.cs">
+      <DependentUpon>projectDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="projectDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projectDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="projectDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projectDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="projectDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projectDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectExpens.cs">
+      <DependentUpon>projectDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectOrder.cs">
+      <DependentUpon>projectDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectProfile.cs">
+      <DependentUpon>projectDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectSubActivity.cs">
+      <DependentUpon>projectDB.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="User\SystemUser.cs" />
-    <Compile Include="User\UserGroups.cs" />
+    <Compile Include="Supplier.cs">
+      <DependentUpon>projectDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SystemUser.cs">
+      <DependentUpon>projectDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Thefinancier.cs">
+      <DependentUpon>projectDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction.cs">
+      <DependentUpon>projectDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserGroup.cs">
+      <DependentUpon>projectDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserGroupPermession.cs">
+      <DependentUpon>projectDB.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <EntityDeploy Include="projectDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>projectDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="projectDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>projectDB.edmx</DependentUpon>
+      <LastGenOutput>projectDB.Context.cs</LastGenOutput>
+    </None>
+    <None Include="projectDB.edmx.diagram">
+      <DependentUpon>projectDB.edmx</DependentUpon>
+    </None>
+    <None Include="projectDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>projectDB.edmx</DependentUpon>
+      <LastGenOutput>projectDB.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="projectDB.edmx.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
