@@ -25,21 +25,6 @@ namespace ProjectManagment.DataLayer
         public string BillNumber { get; set; }
         public double RequiarAmount { get; set; }
         public string CashingNumber { get; set; }
-        public bool OkyProjectManager { get; set; }
-        public System.DateTime DateOfOkProjectManager { get; set; }
-        public string ProjectMnagerComment { get; set; }
-        public bool OkyFainancManager { get; set; }
-        public System.DateTime DateOfOkyFainancManager { get; set; }
-        public string FainancManagerComment { get; set; }
-        public bool OkyAuditManager { get; set; }
-        public System.DateTime DateOfOkyAuditManager { get; set; }
-        public string AuditManagerComment { get; set; }
-        public bool OkyAdministrativeManager { get; set; }
-        public System.DateTime DateOfOkyAdministrativeManager { get; set; }
-        public string AdministrativeManagerComment { get; set; }
-        public bool OkyPresident { get; set; }
-        public System.DateTime DateOfOkyPresident { get; set; }
-        public string PresidentComment { get; set; }
     
         public virtual ProjectSubActivity ProjectSubActivity { get; set; }
         public virtual ICollection<Supplier> Suppliers { get; set; }
