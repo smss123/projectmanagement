@@ -31,6 +31,7 @@ namespace ProjectManagment.DataLayer
         public System.DateTime EndDate { get; set; }
         public string Status { get; set; }
         public int progress { get; set; }
+        public double TotalCost { get; set; }
     
         public virtual ICollection<ProjectActivity> ProjectActivities { get; set; }
         public virtual ICollection<Account> Accounts { get; set; }

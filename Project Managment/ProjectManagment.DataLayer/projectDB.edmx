@@ -195,21 +195,6 @@
     <Property Name="BillNumber" Type="nvarchar(max)" Nullable="true" />
     <Property Name="RequiarAmount" Type="float" Nullable="false" />
     <Property Name="CashingNumber" Type="nvarchar(max)" Nullable="true" />
-    <Property Name="OkyProjectManager" Type="bit" Nullable="false" />
-    <Property Name="DateOfOkProjectManager" Type="datetime" Nullable="false" />
-    <Property Name="ProjectMnagerComment" Type="nvarchar(max)" Nullable="true" />
-    <Property Name="OkyFainancManager" Type="bit" Nullable="false" />
-    <Property Name="DateOfOkyFainancManager" Type="datetime" Nullable="false" />
-    <Property Name="FainancManagerComment" Type="nvarchar(max)" Nullable="true" />
-    <Property Name="OkyAuditManager" Type="bit" Nullable="false" />
-    <Property Name="DateOfOkyAuditManager" Type="datetime" Nullable="false" />
-    <Property Name="AuditManagerComment" Type="nvarchar(max)" Nullable="true" />
-    <Property Name="OkyAdministrativeManager" Type="bit" Nullable="false" />
-    <Property Name="DateOfOkyAdministrativeManager" Type="datetime" Nullable="false" />
-    <Property Name="AdministrativeManagerComment" Type="nvarchar(max)" Nullable="true" />
-    <Property Name="OkyPresident" Type="bit" Nullable="false" />
-    <Property Name="DateOfOkyPresident" Type="datetime" Nullable="false" />
-    <Property Name="PresidentComment" Type="nvarchar(max)" Nullable="true" />
     <Property Name="ProjectSubActivity_ID" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="ProjectOrders">
@@ -233,6 +218,7 @@
     <Property Name="EndDate" Type="datetime" Nullable="false" />
     <Property Name="Status" Type="nvarchar(max)" Nullable="true" />
     <Property Name="progress" Type="int" Nullable="false" />
+    <Property Name="TotalCost" Type="float" Nullable="false" />
   </EntityType>
   <EntityType Name="ProjectSubActivities">
     <Key>
@@ -675,6 +661,7 @@
           <NavigationProperty Name="ProjectOrders" Relationship="ProjectManagment.DataLayer.dbContextModel.ProjectProfileProjectOrder" FromRole="ProjectProfile" ToRole="ProjectOrder" />
           <NavigationProperty Name="Contracts" Relationship="ProjectManagment.DataLayer.dbContextModel.ProjectProfileContract" FromRole="ProjectProfile" ToRole="Contract" />
           <NavigationProperty Name="Thefinanciers" Relationship="ProjectManagment.DataLayer.dbContextModel.ProjectProfileThefinancier" FromRole="ProjectProfile" ToRole="Thefinancier" />
+          <Property Name="TotalCost" Type="Double" Nullable="false" />
         </EntityType>
         <EntityType Name="ProjectSubActivity">
           <Key>
@@ -1432,6 +1419,7 @@
           <ScalarProperty Name="EndDate" ColumnName="EndDate" />
           <ScalarProperty Name="Status" ColumnName="Status" />
           <ScalarProperty Name="progress" ColumnName="progress" />
+          <ScalarProperty Name="TotalCost" ColumnName="TotalCost" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
