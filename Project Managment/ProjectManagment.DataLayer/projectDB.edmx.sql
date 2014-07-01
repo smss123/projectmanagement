@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 07/01/2014 00:15:17
+-- Date Created: 07/01/2014 01:11:08
 -- Generated from EDMX file: D:\Systems\Xprema systems\projectmanagement\projectmanagement\Project Managment\ProjectManagment.DataLayer\projectDB.edmx
 -- --------------------------------------------------
 
@@ -228,21 +228,6 @@ CREATE TABLE [dbo].[ProjectExpenses] (
     [BillNumber] nvarchar(max)  NULL,
     [RequiarAmount] float  NOT NULL,
     [CashingNumber] nvarchar(max)  NULL,
-    [OkyProjectManager] bit  NOT NULL,
-    [DateOfOkProjectManager] datetime  NOT NULL,
-    [ProjectMnagerComment] nvarchar(max)  NULL,
-    [OkyFainancManager] bit  NOT NULL,
-    [DateOfOkyFainancManager] datetime  NOT NULL,
-    [FainancManagerComment] nvarchar(max)  NULL,
-    [OkyAuditManager] bit  NOT NULL,
-    [DateOfOkyAuditManager] datetime  NOT NULL,
-    [AuditManagerComment] nvarchar(max)  NULL,
-    [OkyAdministrativeManager] bit  NOT NULL,
-    [DateOfOkyAdministrativeManager] datetime  NOT NULL,
-    [AdministrativeManagerComment] nvarchar(max)  NULL,
-    [OkyPresident] bit  NOT NULL,
-    [DateOfOkyPresident] datetime  NOT NULL,
-    [PresidentComment] nvarchar(max)  NULL,
     [ProjectSubActivity_ID] int  NOT NULL
 );
 GO
@@ -265,7 +250,8 @@ CREATE TABLE [dbo].[ProjectProfiles] (
     [StartDate] datetime  NOT NULL,
     [EndDate] datetime  NOT NULL,
     [Status] nvarchar(max)  NULL,
-    [progress] int  NOT NULL
+    [progress] int  NOT NULL,
+    [TotalCost] float  NOT NULL
 );
 GO
 
