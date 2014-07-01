@@ -60,6 +60,7 @@
     <Compile Include="Attachment.cs">
       <DependentUpon>projectDB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Commands\UserGroupCommand\cmdUserGroupCommand.cs" />
     <Compile Include="Contract.cs">
       <DependentUpon>projectDB.tt</DependentUpon>
     </Compile>
