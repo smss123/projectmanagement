@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using ProjectManagment.Forms.UserGroup;
 namespace ProjectManagment
 {
     public partial class Form1 : Form
@@ -27,7 +27,16 @@ namespace ProjectManagment
         private void button1_Click(object sender, EventArgs e)
         {
           //  textBox1.Text = db.Database.Connection.ConnectionString;
+
+            frmUserGroup frmgroup = new frmUserGroup();
+            frmgroup.ShowDialog();
           
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmSystemUser frmuser = new frmSystemUser();
+            frmuser.ShowDialog();
         }
     }
 }
