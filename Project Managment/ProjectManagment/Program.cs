@@ -17,7 +17,7 @@ namespace ProjectManagment
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmUserGroup());
+            Application.Run(new Form1());
         }
     }
 }
