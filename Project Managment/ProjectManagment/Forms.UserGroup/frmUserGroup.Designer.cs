@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn7 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn8 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn9 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn10 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn11 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn12 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn6 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             this.radContextMenu1 = new Telerik.WinControls.UI.RadContextMenu(this.components);
             this.radMenuItem1 = new Telerik.WinControls.UI.RadMenuItem();
             this.radMenuItem2 = new Telerik.WinControls.UI.RadMenuItem();
@@ -51,15 +51,15 @@
             this.radMenuItem7 = new Telerik.WinControls.UI.RadMenuItem();
             this.radMenuItem9 = new Telerik.WinControls.UI.RadMenuItem();
             this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
-            this.radGroupBox1 = new Telerik.WinControls.UI.RadGroupBox();
-            this.GroupIDTextBox = new Telerik.WinControls.UI.RadTextBox();
-            this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
-            this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
-            this.GroupNameTextBox = new Telerik.WinControls.UI.RadTextBox();
-            this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.GroupUserGridView = new Telerik.WinControls.UI.RadGridView();
+            this.radGroupBox1 = new Telerik.WinControls.UI.RadGroupBox();
             this.GroupDecTextBox = new Telerik.WinControls.UI.RadTextBox();
+            this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
+            this.GroupNameTextBox = new Telerik.WinControls.UI.RadTextBox();
+            this.GroupIDTextBox = new Telerik.WinControls.UI.RadTextBox();
+            this.GroupUserGridView = new Telerik.WinControls.UI.RadGridView();
             this.radMenu1 = new Telerik.WinControls.UI.RadMenu();
             ((System.ComponentModel.ISupportInitialize)(this.groupNameRadTextBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupDescriptionRadTextBox)).BeginInit();
@@ -69,16 +69,16 @@
             this.radPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).BeginInit();
             this.radGroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GroupIDTextBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GroupNameTextBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GroupDecTextBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GroupNameTextBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GroupIDTextBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GroupUserGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GroupUserGridView.MasterTemplate)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GroupDecTextBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
             // radContextMenu1
@@ -130,26 +130,26 @@
             // 
             // radGridView1
             // 
-            gridViewTextBoxColumn7.EnableExpressionEditor = false;
-            gridViewTextBoxColumn7.HeaderText = "رقم المجموعة";
-            gridViewTextBoxColumn7.Name = "colID";
-            gridViewTextBoxColumn7.Width = 73;
-            gridViewTextBoxColumn8.EnableExpressionEditor = false;
-            gridViewTextBoxColumn8.HeaderText = "اسم المجموعة";
-            gridViewTextBoxColumn8.Name = "colName";
-            gridViewTextBoxColumn8.Width = 195;
-            gridViewTextBoxColumn9.EnableExpressionEditor = false;
-            gridViewTextBoxColumn9.HeaderText = "وصف المجموعة";
-            gridViewTextBoxColumn9.Name = "colDescription";
-            gridViewTextBoxColumn9.Width = 333;
+            gridViewTextBoxColumn1.EnableExpressionEditor = false;
+            gridViewTextBoxColumn1.HeaderText = "رقم المجموعة";
+            gridViewTextBoxColumn1.Name = "colID";
+            gridViewTextBoxColumn1.Width = 73;
+            gridViewTextBoxColumn2.EnableExpressionEditor = false;
+            gridViewTextBoxColumn2.HeaderText = "اسم المجموعة";
+            gridViewTextBoxColumn2.Name = "colName";
+            gridViewTextBoxColumn2.Width = 195;
+            gridViewTextBoxColumn3.EnableExpressionEditor = false;
+            gridViewTextBoxColumn3.HeaderText = "وصف المجموعة";
+            gridViewTextBoxColumn3.Name = "colDescription";
+            gridViewTextBoxColumn3.Width = 333;
             this.radGridView1.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn7,
-            gridViewTextBoxColumn8,
-            gridViewTextBoxColumn9});
+            gridViewTextBoxColumn1,
+            gridViewTextBoxColumn2,
+            gridViewTextBoxColumn3});
             // 
             // radStatusStrip1
             // 
-            this.radStatusStrip1.Location = new System.Drawing.Point(0, 464);
+            this.radStatusStrip1.Location = new System.Drawing.Point(0, 463);
             this.radStatusStrip1.Name = "radStatusStrip1";
             this.radStatusStrip1.Size = new System.Drawing.Size(932, 25);
             this.radStatusStrip1.TabIndex = 0;
@@ -208,6 +208,15 @@
             this.radPanel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.radPanel1.ThemeName = "TelerikMetro";
             // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Location = new System.Drawing.Point(288, 6);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(237, 166);
+            this.checkedListBox1.TabIndex = 1;
+            // 
             // radGroupBox1
             // 
             this.radGroupBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
@@ -226,45 +235,14 @@
             this.radGroupBox1.Text = "radGroupBox1";
             this.radGroupBox1.ThemeName = "TelerikMetro";
             // 
-            // GroupIDTextBox
+            // GroupDecTextBox
             // 
-            this.GroupIDTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.GroupIDTextBox.Location = new System.Drawing.Point(114, 25);
-            this.GroupIDTextBox.Name = "GroupIDTextBox";
-            this.GroupIDTextBox.ReadOnly = true;
-            this.GroupIDTextBox.Size = new System.Drawing.Size(175, 22);
-            this.GroupIDTextBox.TabIndex = 0;
-            this.GroupIDTextBox.TabStop = false;
-            this.GroupIDTextBox.ThemeName = "TelerikMetro";
-            // 
-            // radLabel1
-            // 
-            this.radLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.radLabel1.Location = new System.Drawing.Point(305, 29);
-            this.radLabel1.Name = "radLabel1";
-            this.radLabel1.Size = new System.Drawing.Size(31, 18);
-            this.radLabel1.TabIndex = 1;
-            this.radLabel1.Text = "الرقم:";
-            this.radLabel1.TextAlignment = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // radLabel2
-            // 
-            this.radLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.radLabel2.Location = new System.Drawing.Point(305, 53);
-            this.radLabel2.Name = "radLabel2";
-            this.radLabel2.Size = new System.Drawing.Size(75, 18);
-            this.radLabel2.TabIndex = 3;
-            this.radLabel2.Text = "اسم المجموعة:";
-            this.radLabel2.TextAlignment = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // GroupNameTextBox
-            // 
-            this.GroupNameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.GroupNameTextBox.Location = new System.Drawing.Point(114, 53);
-            this.GroupNameTextBox.Name = "GroupNameTextBox";
-            this.GroupNameTextBox.Size = new System.Drawing.Size(175, 22);
-            this.GroupNameTextBox.TabIndex = 1;
-            this.GroupNameTextBox.ThemeName = "TelerikMetro";
+            this.GroupDecTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.GroupDecTextBox.Location = new System.Drawing.Point(114, 81);
+            this.GroupDecTextBox.Name = "GroupDecTextBox";
+            this.GroupDecTextBox.Size = new System.Drawing.Size(175, 22);
+            this.GroupDecTextBox.TabIndex = 2;
+            this.GroupDecTextBox.ThemeName = "TelerikMetro";
             // 
             // radLabel3
             // 
@@ -276,14 +254,45 @@
             this.radLabel3.Text = "الوصف:";
             this.radLabel3.TextAlignment = System.Drawing.ContentAlignment.TopRight;
             // 
-            // checkedListBox1
+            // radLabel2
             // 
-            this.checkedListBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(288, 6);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(237, 166);
-            this.checkedListBox1.TabIndex = 1;
+            this.radLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.radLabel2.Location = new System.Drawing.Point(305, 53);
+            this.radLabel2.Name = "radLabel2";
+            this.radLabel2.Size = new System.Drawing.Size(75, 18);
+            this.radLabel2.TabIndex = 3;
+            this.radLabel2.Text = "اسم المجموعة:";
+            this.radLabel2.TextAlignment = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // radLabel1
+            // 
+            this.radLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.radLabel1.Location = new System.Drawing.Point(305, 29);
+            this.radLabel1.Name = "radLabel1";
+            this.radLabel1.Size = new System.Drawing.Size(31, 18);
+            this.radLabel1.TabIndex = 1;
+            this.radLabel1.Text = "الرقم:";
+            this.radLabel1.TextAlignment = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // GroupNameTextBox
+            // 
+            this.GroupNameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.GroupNameTextBox.Location = new System.Drawing.Point(114, 53);
+            this.GroupNameTextBox.Name = "GroupNameTextBox";
+            this.GroupNameTextBox.Size = new System.Drawing.Size(175, 22);
+            this.GroupNameTextBox.TabIndex = 1;
+            this.GroupNameTextBox.ThemeName = "TelerikMetro";
+            // 
+            // GroupIDTextBox
+            // 
+            this.GroupIDTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.GroupIDTextBox.Location = new System.Drawing.Point(114, 25);
+            this.GroupIDTextBox.Name = "GroupIDTextBox";
+            this.GroupIDTextBox.ReadOnly = true;
+            this.GroupIDTextBox.Size = new System.Drawing.Size(175, 22);
+            this.GroupIDTextBox.TabIndex = 0;
+            this.GroupIDTextBox.TabStop = false;
+            this.GroupIDTextBox.ThemeName = "TelerikMetro";
             // 
             // GroupUserGridView
             // 
@@ -298,23 +307,23 @@
             // GroupUserGridView
             // 
             this.GroupUserGridView.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewTextBoxColumn10.EnableExpressionEditor = false;
-            gridViewTextBoxColumn10.HeaderText = "الرقم";
-            gridViewTextBoxColumn10.Name = "GroupIDColm";
-            gridViewTextBoxColumn10.ReadOnly = true;
-            gridViewTextBoxColumn10.Width = 120;
-            gridViewTextBoxColumn11.EnableExpressionEditor = false;
-            gridViewTextBoxColumn11.HeaderText = "اسم المجموعة";
-            gridViewTextBoxColumn11.Name = "GroupNameColm";
-            gridViewTextBoxColumn11.Width = 324;
-            gridViewTextBoxColumn12.EnableExpressionEditor = false;
-            gridViewTextBoxColumn12.HeaderText = "الوصف";
-            gridViewTextBoxColumn12.Name = "groupDecColm";
-            gridViewTextBoxColumn12.Width = 470;
+            gridViewTextBoxColumn4.EnableExpressionEditor = false;
+            gridViewTextBoxColumn4.HeaderText = "الرقم";
+            gridViewTextBoxColumn4.Name = "GroupIDColm";
+            gridViewTextBoxColumn4.ReadOnly = true;
+            gridViewTextBoxColumn4.Width = 120;
+            gridViewTextBoxColumn5.EnableExpressionEditor = false;
+            gridViewTextBoxColumn5.HeaderText = "اسم المجموعة";
+            gridViewTextBoxColumn5.Name = "GroupNameColm";
+            gridViewTextBoxColumn5.Width = 324;
+            gridViewTextBoxColumn6.EnableExpressionEditor = false;
+            gridViewTextBoxColumn6.HeaderText = "الوصف";
+            gridViewTextBoxColumn6.Name = "groupDecColm";
+            gridViewTextBoxColumn6.Width = 470;
             this.GroupUserGridView.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn10,
-            gridViewTextBoxColumn11,
-            gridViewTextBoxColumn12});
+            gridViewTextBoxColumn4,
+            gridViewTextBoxColumn5,
+            gridViewTextBoxColumn6});
             this.GroupUserGridView.MasterTemplate.EnableFiltering = true;
             this.GroupUserGridView.Name = "GroupUserGridView";
             this.GroupUserGridView.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -322,21 +331,6 @@
             this.GroupUserGridView.TabIndex = 3;
             this.GroupUserGridView.Text = "radGridView2";
             this.GroupUserGridView.ThemeName = "TelerikMetro";
-            // 
-            // GroupDecTextBox
-            // 
-            this.GroupDecTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.GroupDecTextBox.Location = new System.Drawing.Point(114, 81);
-            this.GroupDecTextBox.Name = "GroupDecTextBox";
-            this.GroupDecTextBox.Size = new System.Drawing.Size(175, 22);
-            this.GroupDecTextBox.TabIndex = 2;
-            this.GroupDecTextBox.ThemeName = "TelerikMetro";
-            // 
-            // frmUserGroup
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(932, 488);
             // 
             // radMenu1
             // 
@@ -353,6 +347,12 @@
             this.radMenu1.TabIndex = 1;
             this.radMenu1.Text = "radMenu1";
             this.radMenu1.ThemeName = "TelerikMetro";
+            // 
+            // frmUserGroup
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(932, 488);
             this.Controls.Add(this.GroupUserGridView);
             this.Controls.Add(this.radPanel1);
             this.Controls.Add(this.radMenu1);
@@ -377,14 +377,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).EndInit();
             this.radGroupBox1.ResumeLayout(false);
             this.radGroupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GroupIDTextBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GroupNameTextBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GroupDecTextBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GroupNameTextBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GroupIDTextBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GroupUserGridView.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GroupUserGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GroupDecTextBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);

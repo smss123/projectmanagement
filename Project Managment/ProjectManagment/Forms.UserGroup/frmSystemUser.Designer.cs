@@ -29,13 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn6 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn7 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn8 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             this.radStatusStrip1 = new Telerik.WinControls.UI.RadStatusStrip();
             this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
             this.radGroupBox1 = new Telerik.WinControls.UI.RadGroupBox();
+            this.radLabel4 = new Telerik.WinControls.UI.RadLabel();
+            this.groupUserComboBox = new Telerik.WinControls.UI.RadMultiColumnComboBox();
             this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
             this.PasswordTextBox = new Telerik.WinControls.UI.RadTextBox();
             this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
@@ -48,14 +50,17 @@
             this.radMenuItem3 = new Telerik.WinControls.UI.RadMenuItem();
             this.radContextMenu1 = new Telerik.WinControls.UI.RadContextMenu(this.components);
             this.radContextMenuManager1 = new Telerik.WinControls.UI.RadContextMenuManager();
-            this.groupUserComboBox = new Telerik.WinControls.UI.RadMultiColumnComboBox();
-            this.radLabel4 = new Telerik.WinControls.UI.RadLabel();
             this.radMenu1 = new Telerik.WinControls.UI.RadMenu();
+            this.telerikMetroTheme1 = new Telerik.WinControls.Themes.TelerikMetroTheme();
             ((System.ComponentModel.ISupportInitialize)(this.radStatusStrip1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).BeginInit();
             this.radGroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupUserComboBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupUserComboBox.EditorControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupUserComboBox.EditorControl.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PasswordTextBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
@@ -64,12 +69,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.radTextBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SystemUserGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SystemUserGridView.MasterTemplate)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupUserComboBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupUserComboBox.EditorControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupUserComboBox.EditorControl.MasterTemplate)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
             // radStatusStrip1
@@ -111,6 +112,47 @@
             this.radGroupBox1.TabIndex = 0;
             this.radGroupBox1.Text = "radGroupBox1";
             this.radGroupBox1.ThemeName = "TelerikMetro";
+            // 
+            // radLabel4
+            // 
+            this.radLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.radLabel4.Location = new System.Drawing.Point(305, 109);
+            this.radLabel4.Name = "radLabel4";
+            this.radLabel4.Size = new System.Drawing.Size(53, 18);
+            this.radLabel4.TabIndex = 6;
+            this.radLabel4.Text = "المجموعة:";
+            this.radLabel4.TextAlignment = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // groupUserComboBox
+            // 
+            // 
+            // groupUserComboBox.NestedRadGridView
+            // 
+            this.groupUserComboBox.EditorControl.BackColor = System.Drawing.SystemColors.Window;
+            this.groupUserComboBox.EditorControl.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.groupUserComboBox.EditorControl.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.groupUserComboBox.EditorControl.Location = new System.Drawing.Point(0, 0);
+            // 
+            // groupUserComboBox.NestedRadGridView
+            // 
+            this.groupUserComboBox.EditorControl.MasterTemplate.AllowAddNewRow = false;
+            this.groupUserComboBox.EditorControl.MasterTemplate.AllowCellContextMenu = false;
+            this.groupUserComboBox.EditorControl.MasterTemplate.AllowColumnChooser = false;
+            this.groupUserComboBox.EditorControl.MasterTemplate.EnableGrouping = false;
+            this.groupUserComboBox.EditorControl.MasterTemplate.ShowFilteringRow = false;
+            this.groupUserComboBox.EditorControl.Name = "NestedRadGridView";
+            this.groupUserComboBox.EditorControl.ReadOnly = true;
+            this.groupUserComboBox.EditorControl.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.groupUserComboBox.EditorControl.ShowGroupPanel = false;
+            this.groupUserComboBox.EditorControl.Size = new System.Drawing.Size(240, 150);
+            this.groupUserComboBox.EditorControl.TabIndex = 0;
+            this.groupUserComboBox.Location = new System.Drawing.Point(114, 109);
+            this.groupUserComboBox.Name = "groupUserComboBox";
+            this.groupUserComboBox.Size = new System.Drawing.Size(175, 20);
+            this.groupUserComboBox.TabIndex = 3;
+            this.groupUserComboBox.TabStop = false;
+            this.groupUserComboBox.Text = "اختر المجموعة";
+            this.groupUserComboBox.ThemeName = "TelerikMetro";
             // 
             // radLabel3
             // 
@@ -184,28 +226,28 @@
             // SystemUserGridView
             // 
             this.SystemUserGridView.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewTextBoxColumn5.EnableExpressionEditor = false;
-            gridViewTextBoxColumn5.HeaderText = "الرقم";
-            gridViewTextBoxColumn5.Name = "UserIDColm";
-            gridViewTextBoxColumn5.ReadOnly = true;
-            gridViewTextBoxColumn5.Width = 104;
-            gridViewTextBoxColumn6.EnableExpressionEditor = false;
-            gridViewTextBoxColumn6.HeaderText = "اسم المستخدم";
-            gridViewTextBoxColumn6.Name = "userNameColm";
-            gridViewTextBoxColumn6.Width = 270;
-            gridViewTextBoxColumn7.EnableExpressionEditor = false;
-            gridViewTextBoxColumn7.HeaderText = "كلمة المرور";
-            gridViewTextBoxColumn7.Name = "passwordColm";
-            gridViewTextBoxColumn7.Width = 300;
-            gridViewTextBoxColumn8.EnableExpressionEditor = false;
-            gridViewTextBoxColumn8.HeaderText = "اسم المجموعة";
-            gridViewTextBoxColumn8.Name = "GroupUserClom";
-            gridViewTextBoxColumn8.Width = 190;
+            gridViewTextBoxColumn1.EnableExpressionEditor = false;
+            gridViewTextBoxColumn1.HeaderText = "الرقم";
+            gridViewTextBoxColumn1.Name = "UserIDColm";
+            gridViewTextBoxColumn1.ReadOnly = true;
+            gridViewTextBoxColumn1.Width = 104;
+            gridViewTextBoxColumn2.EnableExpressionEditor = false;
+            gridViewTextBoxColumn2.HeaderText = "اسم المستخدم";
+            gridViewTextBoxColumn2.Name = "userNameColm";
+            gridViewTextBoxColumn2.Width = 270;
+            gridViewTextBoxColumn3.EnableExpressionEditor = false;
+            gridViewTextBoxColumn3.HeaderText = "كلمة المرور";
+            gridViewTextBoxColumn3.Name = "passwordColm";
+            gridViewTextBoxColumn3.Width = 300;
+            gridViewTextBoxColumn4.EnableExpressionEditor = false;
+            gridViewTextBoxColumn4.HeaderText = "اسم المجموعة";
+            gridViewTextBoxColumn4.Name = "GroupUserClom";
+            gridViewTextBoxColumn4.Width = 190;
             this.SystemUserGridView.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn5,
-            gridViewTextBoxColumn6,
-            gridViewTextBoxColumn7,
-            gridViewTextBoxColumn8});
+            gridViewTextBoxColumn1,
+            gridViewTextBoxColumn2,
+            gridViewTextBoxColumn3,
+            gridViewTextBoxColumn4});
             this.SystemUserGridView.MasterTemplate.EnableFiltering = true;
             this.SystemUserGridView.Name = "SystemUserGridView";
             this.SystemUserGridView.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -245,53 +287,6 @@
             this.radMenuItem2,
             this.radMenuItem3});
             // 
-            // groupUserComboBox
-            // 
-            // 
-            // groupUserComboBox.NestedRadGridView
-            // 
-            this.groupUserComboBox.EditorControl.BackColor = System.Drawing.SystemColors.Window;
-            this.groupUserComboBox.EditorControl.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.groupUserComboBox.EditorControl.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.groupUserComboBox.EditorControl.Location = new System.Drawing.Point(0, 0);
-            // 
-            // groupUserComboBox.NestedRadGridView
-            // 
-            this.groupUserComboBox.EditorControl.MasterTemplate.AllowAddNewRow = false;
-            this.groupUserComboBox.EditorControl.MasterTemplate.AllowCellContextMenu = false;
-            this.groupUserComboBox.EditorControl.MasterTemplate.AllowColumnChooser = false;
-            this.groupUserComboBox.EditorControl.MasterTemplate.EnableGrouping = false;
-            this.groupUserComboBox.EditorControl.MasterTemplate.ShowFilteringRow = false;
-            this.groupUserComboBox.EditorControl.Name = "NestedRadGridView";
-            this.groupUserComboBox.EditorControl.ReadOnly = true;
-            this.groupUserComboBox.EditorControl.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupUserComboBox.EditorControl.ShowGroupPanel = false;
-            this.groupUserComboBox.EditorControl.Size = new System.Drawing.Size(240, 150);
-            this.groupUserComboBox.EditorControl.TabIndex = 0;
-            this.groupUserComboBox.Location = new System.Drawing.Point(114, 109);
-            this.groupUserComboBox.Name = "groupUserComboBox";
-            this.groupUserComboBox.Size = new System.Drawing.Size(175, 20);
-            this.groupUserComboBox.TabIndex = 3;
-            this.groupUserComboBox.TabStop = false;
-            this.groupUserComboBox.Text = "اختر المجموعة";
-            this.groupUserComboBox.ThemeName = "TelerikMetro";
-            // 
-            // radLabel4
-            // 
-            this.radLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.radLabel4.Location = new System.Drawing.Point(305, 109);
-            this.radLabel4.Name = "radLabel4";
-            this.radLabel4.Size = new System.Drawing.Size(53, 18);
-            this.radLabel4.TabIndex = 6;
-            this.radLabel4.Text = "المجموعة:";
-            this.radLabel4.TextAlignment = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // frmSystemUser
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(881, 507);
-            // 
             // radMenu1
             // 
             this.radMenu1.Items.AddRange(new Telerik.WinControls.RadItem[] {
@@ -305,6 +300,12 @@
             this.radMenu1.TabIndex = 6;
             this.radMenu1.Text = "radMenu1";
             this.radMenu1.ThemeName = "TelerikMetro";
+            // 
+            // frmSystemUser
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(881, 507);
             this.Controls.Add(this.SystemUserGridView);
             this.Controls.Add(this.radPanel1);
             this.Controls.Add(this.radMenu1);
@@ -323,6 +324,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).EndInit();
             this.radGroupBox1.ResumeLayout(false);
             this.radGroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupUserComboBox.EditorControl.MasterTemplate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupUserComboBox.EditorControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupUserComboBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PasswordTextBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).EndInit();
@@ -331,10 +336,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.radTextBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SystemUserGridView.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SystemUserGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupUserComboBox.EditorControl.MasterTemplate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupUserComboBox.EditorControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupUserComboBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
@@ -362,6 +363,7 @@
         private Telerik.WinControls.UI.RadLabel radLabel4;
         private Telerik.WinControls.UI.RadMultiColumnComboBox groupUserComboBox;
         private Telerik.WinControls.UI.RadMenu radMenu1;
+        private Telerik.WinControls.Themes.TelerikMetroTheme telerikMetroTheme1;
 
     }
 }

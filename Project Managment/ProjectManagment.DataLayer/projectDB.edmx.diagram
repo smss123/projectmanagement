@@ -15,7 +15,7 @@
         <EntityTypeShape EntityType="ProjectManagment.DataLayer.dbContextModel.ProjectExpens" Width="1.5" PointX="3.6136776498156769" PointY="12.937952929154676" IsExpanded="false" FillColor="Gray" />
         <EntityTypeShape EntityType="ProjectManagment.DataLayer.dbContextModel.ProjectOrder" Width="1.5" PointX="5.6592860398601621" PointY="9.48899660920357" IsExpanded="false" FillColor="Gray" />
         <EntityTypeShape EntityType="ProjectManagment.DataLayer.dbContextModel.ProjectProfile" Width="1.4999999999999998" PointX="0.5" PointY="8.1046031780660321" IsExpanded="false" FillColor="Gray" />
-        <EntityTypeShape EntityType="ProjectManagment.DataLayer.dbContextModel.ProjectSubActivity" Width="1.9755434696342524" PointX="0.5" PointY="11.287137753047896" IsExpanded="false" FillColor="Gray" />
+        <EntityTypeShape EntityType="ProjectManagment.DataLayer.dbContextModel.ProjectSubActivity" Width="2" PointX="0.5" PointY="12.019927522264981" IsExpanded="false" FillColor="Gray" />
         <EntityTypeShape EntityType="ProjectManagment.DataLayer.dbContextModel.Supplier" Width="1.5" PointX="11.812952929154676" PointY="12.948369534408045" IsExpanded="true" />
         <EntityTypeShape EntityType="ProjectManagment.DataLayer.dbContextModel.SystemUser" Width="1.5" PointX="1.625" PointY="2.9538044008181648" IsExpanded="false" FillColor="Red" />
         <EntityTypeShape EntityType="ProjectManagment.DataLayer.dbContextModel.Thefinancier" Width="1.5000000000000009" PointX="7.0599167172023076" PointY="14.131206743479869" IsExpanded="false" FillColor="Gray" />
