@@ -51,6 +51,7 @@
             this.radContextMenu1 = new Telerik.WinControls.UI.RadContextMenu(this.components);
             this.radContextMenuManager1 = new Telerik.WinControls.UI.RadContextMenuManager();
             this.radMenu1 = new Telerik.WinControls.UI.RadMenu();
+            this.telerikMetroTheme1 = new Telerik.WinControls.Themes.TelerikMetroTheme();
             ((System.ComponentModel.ISupportInitialize)(this.radStatusStrip1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
@@ -117,7 +118,7 @@
             this.radLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.radLabel4.Location = new System.Drawing.Point(305, 109);
             this.radLabel4.Name = "radLabel4";
-            this.radLabel4.Size = new System.Drawing.Size(44, 18);
+            this.radLabel4.Size = new System.Drawing.Size(53, 18);
             this.radLabel4.TabIndex = 6;
             this.radLabel4.Text = "المجموعة:";
             this.radLabel4.TextAlignment = System.Drawing.ContentAlignment.TopRight;
@@ -132,7 +133,7 @@
             this.groupUserComboBox.EditorControl.ForeColor = System.Drawing.SystemColors.ControlText;
             this.groupUserComboBox.EditorControl.Location = new System.Drawing.Point(0, 0);
             // 
-            // 
+            // groupUserComboBox.NestedRadGridView
             // 
             this.groupUserComboBox.EditorControl.MasterTemplate.AllowAddNewRow = false;
             this.groupUserComboBox.EditorControl.MasterTemplate.AllowCellContextMenu = false;
@@ -158,7 +159,7 @@
             this.radLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.radLabel3.Location = new System.Drawing.Point(305, 76);
             this.radLabel3.Name = "radLabel3";
-            this.radLabel3.Size = new System.Drawing.Size(53, 18);
+            this.radLabel3.Size = new System.Drawing.Size(61, 18);
             this.radLabel3.TabIndex = 5;
             this.radLabel3.Text = "كلمة المرور:";
             this.radLabel3.TextAlignment = System.Drawing.ContentAlignment.TopRight;
@@ -177,7 +178,7 @@
             this.radLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.radLabel2.Location = new System.Drawing.Point(305, 53);
             this.radLabel2.Name = "radLabel2";
-            this.radLabel2.Size = new System.Drawing.Size(60, 18);
+            this.radLabel2.Size = new System.Drawing.Size(75, 18);
             this.radLabel2.TabIndex = 3;
             this.radLabel2.Text = "اسم المجموعة:";
             this.radLabel2.TextAlignment = System.Drawing.ContentAlignment.TopRight;
@@ -187,7 +188,7 @@
             this.radLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.radLabel1.Location = new System.Drawing.Point(305, 29);
             this.radLabel1.Name = "radLabel1";
-            this.radLabel1.Size = new System.Drawing.Size(26, 18);
+            this.radLabel1.Size = new System.Drawing.Size(31, 18);
             this.radLabel1.TabIndex = 1;
             this.radLabel1.Text = "الرقم:";
             this.radLabel1.TextAlignment = System.Drawing.ContentAlignment.TopRight;
@@ -362,6 +363,7 @@
         private Telerik.WinControls.UI.RadLabel radLabel4;
         private Telerik.WinControls.UI.RadMultiColumnComboBox groupUserComboBox;
         private Telerik.WinControls.UI.RadMenu radMenu1;
+        private Telerik.WinControls.Themes.TelerikMetroTheme telerikMetroTheme1;
 
     }
 }
