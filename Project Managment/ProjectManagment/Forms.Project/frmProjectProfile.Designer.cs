@@ -74,7 +74,7 @@
             this.radMenu1.Location = new System.Drawing.Point(0, 0);
             this.radMenu1.Name = "radMenu1";
             this.radMenu1.Padding = new System.Windows.Forms.Padding(2, 2, 0, 0);
-            this.radMenu1.Size = new System.Drawing.Size(918, 27);
+            this.radMenu1.Size = new System.Drawing.Size(918, 29);
             this.radMenu1.TabIndex = 0;
             this.radMenu1.Text = "radMenu1";
             this.radMenu1.ThemeName = "TelerikMetro";
@@ -107,7 +107,7 @@
             this.radGroupBox1.Controls.Add(this.ProjectNameTextBox);
             this.radGroupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.radGroupBox1.HeaderText = "radGroupBox1";
-            this.radGroupBox1.Location = new System.Drawing.Point(0, 27);
+            this.radGroupBox1.Location = new System.Drawing.Point(0, 29);
             this.radGroupBox1.Name = "radGroupBox1";
             this.radGroupBox1.Size = new System.Drawing.Size(918, 187);
             this.radGroupBox1.TabIndex = 2;

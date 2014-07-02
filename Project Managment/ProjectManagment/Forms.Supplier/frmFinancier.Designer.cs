@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn15 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn16 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn17 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn18 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn19 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn20 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn21 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn6 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn7 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             this.radStatusStrip1 = new Telerik.WinControls.UI.RadStatusStrip();
             this.radMenu1 = new Telerik.WinControls.UI.RadMenu();
             this.radMenuItem1 = new Telerik.WinControls.UI.RadMenuItem();
@@ -80,7 +80,7 @@
             // 
             // radStatusStrip1
             // 
-            this.radStatusStrip1.Location = new System.Drawing.Point(0, 518);
+            this.radStatusStrip1.Location = new System.Drawing.Point(0, 519);
             this.radStatusStrip1.Name = "radStatusStrip1";
             this.radStatusStrip1.Size = new System.Drawing.Size(931, 25);
             this.radStatusStrip1.TabIndex = 0;
@@ -98,7 +98,7 @@
             this.radMenu1.Location = new System.Drawing.Point(0, 0);
             this.radMenu1.Name = "radMenu1";
             this.radMenu1.Padding = new System.Windows.Forms.Padding(2, 2, 0, 0);
-            this.radMenu1.Size = new System.Drawing.Size(931, 27);
+            this.radMenu1.Size = new System.Drawing.Size(931, 29);
             this.radMenu1.TabIndex = 1;
             this.radMenu1.Text = "radMenu1";
             this.radMenu1.ThemeName = "TelerikMetro";
@@ -160,7 +160,7 @@
             this.radGroupBox1.Controls.Add(this.FinanciernameTextBox);
             this.radGroupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.radGroupBox1.HeaderText = "radGroupBox1";
-            this.radGroupBox1.Location = new System.Drawing.Point(0, 27);
+            this.radGroupBox1.Location = new System.Drawing.Point(0, 29);
             this.radGroupBox1.Name = "radGroupBox1";
             this.radGroupBox1.Size = new System.Drawing.Size(931, 138);
             this.radGroupBox1.TabIndex = 2;
@@ -289,51 +289,51 @@
             this.radGridView1.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.radGridView1.ForeColor = System.Drawing.Color.Black;
             this.radGridView1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radGridView1.Location = new System.Drawing.Point(0, 165);
+            this.radGridView1.Location = new System.Drawing.Point(0, 167);
             // 
             // radGridView1
             // 
             this.radGridView1.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewTextBoxColumn15.EnableExpressionEditor = false;
-            gridViewTextBoxColumn15.HeaderText = "الرقم";
-            gridViewTextBoxColumn15.Name = "FinancierIDColm";
-            gridViewTextBoxColumn15.Width = 58;
-            gridViewTextBoxColumn16.EnableExpressionEditor = false;
-            gridViewTextBoxColumn16.HeaderText = "اسم الممول";
-            gridViewTextBoxColumn16.Name = "FinancierNameColm";
-            gridViewTextBoxColumn16.Width = 138;
-            gridViewTextBoxColumn17.EnableExpressionEditor = false;
-            gridViewTextBoxColumn17.HeaderText = "اسم الوكيل";
-            gridViewTextBoxColumn17.Name = "AgentNameColm";
-            gridViewTextBoxColumn17.Width = 122;
-            gridViewTextBoxColumn18.EnableExpressionEditor = false;
-            gridViewTextBoxColumn18.HeaderText = "رقم الهاتف";
-            gridViewTextBoxColumn18.Name = "FinancierPhoneColm";
-            gridViewTextBoxColumn18.Width = 111;
-            gridViewTextBoxColumn19.EnableExpressionEditor = false;
-            gridViewTextBoxColumn19.HeaderText = "رقم الفاكس";
-            gridViewTextBoxColumn19.Name = "FinancierFaxColm";
-            gridViewTextBoxColumn19.Width = 122;
-            gridViewTextBoxColumn20.EnableExpressionEditor = false;
-            gridViewTextBoxColumn20.HeaderText = "البريد الاكتروني";
-            gridViewTextBoxColumn20.Name = "FinanciermailColm";
-            gridViewTextBoxColumn20.Width = 167;
-            gridViewTextBoxColumn21.EnableExpressionEditor = false;
-            gridViewTextBoxColumn21.HeaderText = "العنوان";
-            gridViewTextBoxColumn21.Name = "FinancierAddresscolm";
-            gridViewTextBoxColumn21.Width = 199;
+            gridViewTextBoxColumn1.EnableExpressionEditor = false;
+            gridViewTextBoxColumn1.HeaderText = "الرقم";
+            gridViewTextBoxColumn1.Name = "FinancierIDColm";
+            gridViewTextBoxColumn1.Width = 58;
+            gridViewTextBoxColumn2.EnableExpressionEditor = false;
+            gridViewTextBoxColumn2.HeaderText = "اسم الممول";
+            gridViewTextBoxColumn2.Name = "FinancierNameColm";
+            gridViewTextBoxColumn2.Width = 138;
+            gridViewTextBoxColumn3.EnableExpressionEditor = false;
+            gridViewTextBoxColumn3.HeaderText = "اسم الوكيل";
+            gridViewTextBoxColumn3.Name = "AgentNameColm";
+            gridViewTextBoxColumn3.Width = 122;
+            gridViewTextBoxColumn4.EnableExpressionEditor = false;
+            gridViewTextBoxColumn4.HeaderText = "رقم الهاتف";
+            gridViewTextBoxColumn4.Name = "FinancierPhoneColm";
+            gridViewTextBoxColumn4.Width = 111;
+            gridViewTextBoxColumn5.EnableExpressionEditor = false;
+            gridViewTextBoxColumn5.HeaderText = "رقم الفاكس";
+            gridViewTextBoxColumn5.Name = "FinancierFaxColm";
+            gridViewTextBoxColumn5.Width = 122;
+            gridViewTextBoxColumn6.EnableExpressionEditor = false;
+            gridViewTextBoxColumn6.HeaderText = "البريد الاكتروني";
+            gridViewTextBoxColumn6.Name = "FinanciermailColm";
+            gridViewTextBoxColumn6.Width = 167;
+            gridViewTextBoxColumn7.EnableExpressionEditor = false;
+            gridViewTextBoxColumn7.HeaderText = "العنوان";
+            gridViewTextBoxColumn7.Name = "FinancierAddresscolm";
+            gridViewTextBoxColumn7.Width = 199;
             this.radGridView1.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn15,
-            gridViewTextBoxColumn16,
-            gridViewTextBoxColumn17,
-            gridViewTextBoxColumn18,
-            gridViewTextBoxColumn19,
-            gridViewTextBoxColumn20,
-            gridViewTextBoxColumn21});
+            gridViewTextBoxColumn1,
+            gridViewTextBoxColumn2,
+            gridViewTextBoxColumn3,
+            gridViewTextBoxColumn4,
+            gridViewTextBoxColumn5,
+            gridViewTextBoxColumn6,
+            gridViewTextBoxColumn7});
             this.radGridView1.MasterTemplate.EnableFiltering = true;
             this.radGridView1.Name = "radGridView1";
             this.radGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.radGridView1.Size = new System.Drawing.Size(931, 353);
+            this.radGridView1.Size = new System.Drawing.Size(931, 351);
             this.radGridView1.TabIndex = 3;
             this.radGridView1.Text = "radGridView1";
             this.radGridView1.ThemeName = "TelerikMetro";
