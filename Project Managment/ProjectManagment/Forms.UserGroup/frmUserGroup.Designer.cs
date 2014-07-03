@@ -227,12 +227,12 @@
             this.radGroupBox1.Controls.Add(this.GroupNameTextBox);
             this.radGroupBox1.Controls.Add(this.GroupIDTextBox);
             this.radGroupBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.radGroupBox1.HeaderText = "radGroupBox1";
+            this.radGroupBox1.HeaderText = "معلومات المجموعة";
             this.radGroupBox1.Location = new System.Drawing.Point(546, 0);
             this.radGroupBox1.Name = "radGroupBox1";
             this.radGroupBox1.Size = new System.Drawing.Size(386, 192);
             this.radGroupBox1.TabIndex = 0;
-            this.radGroupBox1.Text = "radGroupBox1";
+            this.radGroupBox1.Text = "معلومات المجموعة";
             this.radGroupBox1.ThemeName = "TelerikMetro";
             // 
             // GroupDecTextBox
@@ -249,7 +249,7 @@
             this.radLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.radLabel3.Location = new System.Drawing.Point(305, 76);
             this.radLabel3.Name = "radLabel3";
-            this.radLabel3.Size = new System.Drawing.Size(44, 18);
+            this.radLabel3.Size = new System.Drawing.Size(37, 18);
             this.radLabel3.TabIndex = 5;
             this.radLabel3.Text = "الوصف:";
             this.radLabel3.TextAlignment = System.Drawing.ContentAlignment.TopRight;
@@ -259,7 +259,7 @@
             this.radLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.radLabel2.Location = new System.Drawing.Point(305, 53);
             this.radLabel2.Name = "radLabel2";
-            this.radLabel2.Size = new System.Drawing.Size(75, 18);
+            this.radLabel2.Size = new System.Drawing.Size(60, 18);
             this.radLabel2.TabIndex = 3;
             this.radLabel2.Text = "اسم المجموعة:";
             this.radLabel2.TextAlignment = System.Drawing.ContentAlignment.TopRight;
@@ -269,7 +269,7 @@
             this.radLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.radLabel1.Location = new System.Drawing.Point(305, 29);
             this.radLabel1.Name = "radLabel1";
-            this.radLabel1.Size = new System.Drawing.Size(31, 18);
+            this.radLabel1.Size = new System.Drawing.Size(26, 18);
             this.radLabel1.TabIndex = 1;
             this.radLabel1.Text = "الرقم:";
             this.radLabel1.TextAlignment = System.Drawing.ContentAlignment.TopRight;

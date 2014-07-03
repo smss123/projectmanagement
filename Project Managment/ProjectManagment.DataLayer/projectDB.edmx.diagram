@@ -20,7 +20,7 @@
         <EntityTypeShape EntityType="ProjectManagment.DataLayer.dbContextModel.SystemUser" Width="1.5" PointX="1.625" PointY="2.9538044008181648" IsExpanded="false" FillColor="Red" />
         <EntityTypeShape EntityType="ProjectManagment.DataLayer.dbContextModel.Thefinancier" Width="1.5000000000000009" PointX="7.0599167172023076" PointY="14.131206743479869" IsExpanded="false" FillColor="Gray" />
         <EntityTypeShape EntityType="ProjectManagment.DataLayer.dbContextModel.Transaction" Width="1.5" PointX="9.8479935550456759" PointY="11.313272153767027" IsExpanded="false" />
-        <EntityTypeShape EntityType="ProjectManagment.DataLayer.dbContextModel.UserGroup" Width="1.5" PointX="1.2418981286018722" PointY="1.2615744213079085" IsExpanded="true" FillColor="Red" />
+        <EntityTypeShape EntityType="ProjectManagment.DataLayer.dbContextModel.UserGroup" Width="1.5" PointX="1.2418981286018722" PointY="1.2615744213079085" IsExpanded="false" FillColor="Red" />
         <EntityTypeShape EntityType="ProjectManagment.DataLayer.dbContextModel.UserGroupPermession" Width="2.1906702773259381" PointX="2.9547101457491189" PointY="2.1426630749037949" FillColor="Red" IsExpanded="false" />
         <AssociationConnector Association="ProjectManagment.DataLayer.dbContextModel.PermessionUserGroupPermession" />
         <AssociationConnector Association="ProjectManagment.DataLayer.dbContextModel.UserGroupUserGroupPermession" />
