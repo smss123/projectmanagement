@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn6 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn7 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn8 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             this.radStatusStrip1 = new Telerik.WinControls.UI.RadStatusStrip();
             this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
             this.radGroupBox1 = new Telerik.WinControls.UI.RadGroupBox();
@@ -45,13 +45,15 @@
             this.UserNameTextBox = new Telerik.WinControls.UI.RadTextBox();
             this.radTextBox1 = new Telerik.WinControls.UI.RadTextBox();
             this.SystemUserGridView = new Telerik.WinControls.UI.RadGridView();
-            this.radMenuItem1 = new Telerik.WinControls.UI.RadMenuItem();
-            this.radMenuItem2 = new Telerik.WinControls.UI.RadMenuItem();
-            this.radMenuItem3 = new Telerik.WinControls.UI.RadMenuItem();
+            this.btnNew = new Telerik.WinControls.UI.RadMenuItem();
+            this.btnAdd = new Telerik.WinControls.UI.RadMenuItem();
+            this.btnEdit = new Telerik.WinControls.UI.RadMenuItem();
             this.radContextMenu1 = new Telerik.WinControls.UI.RadContextMenu(this.components);
             this.radContextMenuManager1 = new Telerik.WinControls.UI.RadContextMenuManager();
             this.radMenu1 = new Telerik.WinControls.UI.RadMenu();
             this.telerikMetroTheme1 = new Telerik.WinControls.Themes.TelerikMetroTheme();
+            this.lblmsg = new Telerik.WinControls.UI.RadLabelElement();
+            this.btnDelete = new Telerik.WinControls.UI.RadMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.radStatusStrip1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
@@ -75,6 +77,8 @@
             // 
             // radStatusStrip1
             // 
+            this.radStatusStrip1.Items.AddRange(new Telerik.WinControls.RadItem[] {
+            this.lblmsg});
             this.radStatusStrip1.Location = new System.Drawing.Point(0, 482);
             this.radStatusStrip1.Name = "radStatusStrip1";
             this.radStatusStrip1.Size = new System.Drawing.Size(881, 25);
@@ -92,6 +96,8 @@
             this.radPanel1.TabIndex = 7;
             this.radPanel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.radPanel1.ThemeName = "TelerikMetro";
+            this.radPanel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.radPanel1_MouseDown);
+            this.radPanel1.MouseHover += new System.EventHandler(this.radPanel1_MouseHover);
             // 
             // radGroupBox1
             // 
@@ -105,12 +111,13 @@
             this.radGroupBox1.Controls.Add(this.UserNameTextBox);
             this.radGroupBox1.Controls.Add(this.radTextBox1);
             this.radGroupBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.radGroupBox1.HeaderText = "radGroupBox1";
+            this.radGroupBox1.HeaderText = "بيانات المستخدم";
             this.radGroupBox1.Location = new System.Drawing.Point(495, 0);
             this.radGroupBox1.Name = "radGroupBox1";
+            this.radContextMenuManager1.SetRadContextMenu(this.radGroupBox1, this.radContextMenu1);
             this.radGroupBox1.Size = new System.Drawing.Size(386, 192);
             this.radGroupBox1.TabIndex = 0;
-            this.radGroupBox1.Text = "radGroupBox1";
+            this.radGroupBox1.Text = "بيانات المستخدم";
             this.radGroupBox1.ThemeName = "TelerikMetro";
             // 
             // radLabel4
@@ -118,7 +125,7 @@
             this.radLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.radLabel4.Location = new System.Drawing.Point(305, 109);
             this.radLabel4.Name = "radLabel4";
-            this.radLabel4.Size = new System.Drawing.Size(53, 18);
+            this.radLabel4.Size = new System.Drawing.Size(44, 18);
             this.radLabel4.TabIndex = 6;
             this.radLabel4.Text = "المجموعة:";
             this.radLabel4.TextAlignment = System.Drawing.ContentAlignment.TopRight;
@@ -133,7 +140,7 @@
             this.groupUserComboBox.EditorControl.ForeColor = System.Drawing.SystemColors.ControlText;
             this.groupUserComboBox.EditorControl.Location = new System.Drawing.Point(0, 0);
             // 
-            // groupUserComboBox.NestedRadGridView
+            // 
             // 
             this.groupUserComboBox.EditorControl.MasterTemplate.AllowAddNewRow = false;
             this.groupUserComboBox.EditorControl.MasterTemplate.AllowCellContextMenu = false;
@@ -159,7 +166,7 @@
             this.radLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.radLabel3.Location = new System.Drawing.Point(305, 76);
             this.radLabel3.Name = "radLabel3";
-            this.radLabel3.Size = new System.Drawing.Size(61, 18);
+            this.radLabel3.Size = new System.Drawing.Size(53, 18);
             this.radLabel3.TabIndex = 5;
             this.radLabel3.Text = "كلمة المرور:";
             this.radLabel3.TextAlignment = System.Drawing.ContentAlignment.TopRight;
@@ -178,7 +185,7 @@
             this.radLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.radLabel2.Location = new System.Drawing.Point(305, 53);
             this.radLabel2.Name = "radLabel2";
-            this.radLabel2.Size = new System.Drawing.Size(75, 18);
+            this.radLabel2.Size = new System.Drawing.Size(60, 18);
             this.radLabel2.TabIndex = 3;
             this.radLabel2.Text = "اسم المجموعة:";
             this.radLabel2.TextAlignment = System.Drawing.ContentAlignment.TopRight;
@@ -188,7 +195,7 @@
             this.radLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.radLabel1.Location = new System.Drawing.Point(305, 29);
             this.radLabel1.Name = "radLabel1";
-            this.radLabel1.Size = new System.Drawing.Size(31, 18);
+            this.radLabel1.Size = new System.Drawing.Size(26, 18);
             this.radLabel1.TabIndex = 1;
             this.radLabel1.Text = "الرقم:";
             this.radLabel1.TextAlignment = System.Drawing.ContentAlignment.TopRight;
@@ -226,28 +233,28 @@
             // SystemUserGridView
             // 
             this.SystemUserGridView.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewTextBoxColumn1.EnableExpressionEditor = false;
-            gridViewTextBoxColumn1.HeaderText = "الرقم";
-            gridViewTextBoxColumn1.Name = "UserIDColm";
-            gridViewTextBoxColumn1.ReadOnly = true;
-            gridViewTextBoxColumn1.Width = 104;
-            gridViewTextBoxColumn2.EnableExpressionEditor = false;
-            gridViewTextBoxColumn2.HeaderText = "اسم المستخدم";
-            gridViewTextBoxColumn2.Name = "userNameColm";
-            gridViewTextBoxColumn2.Width = 270;
-            gridViewTextBoxColumn3.EnableExpressionEditor = false;
-            gridViewTextBoxColumn3.HeaderText = "كلمة المرور";
-            gridViewTextBoxColumn3.Name = "passwordColm";
-            gridViewTextBoxColumn3.Width = 300;
-            gridViewTextBoxColumn4.EnableExpressionEditor = false;
-            gridViewTextBoxColumn4.HeaderText = "اسم المجموعة";
-            gridViewTextBoxColumn4.Name = "GroupUserClom";
-            gridViewTextBoxColumn4.Width = 190;
+            gridViewTextBoxColumn5.EnableExpressionEditor = false;
+            gridViewTextBoxColumn5.HeaderText = "الرقم";
+            gridViewTextBoxColumn5.Name = "UserIDColm";
+            gridViewTextBoxColumn5.ReadOnly = true;
+            gridViewTextBoxColumn5.Width = 104;
+            gridViewTextBoxColumn6.EnableExpressionEditor = false;
+            gridViewTextBoxColumn6.HeaderText = "اسم المستخدم";
+            gridViewTextBoxColumn6.Name = "userNameColm";
+            gridViewTextBoxColumn6.Width = 270;
+            gridViewTextBoxColumn7.EnableExpressionEditor = false;
+            gridViewTextBoxColumn7.HeaderText = "كلمة المرور";
+            gridViewTextBoxColumn7.Name = "passwordColm";
+            gridViewTextBoxColumn7.Width = 300;
+            gridViewTextBoxColumn8.EnableExpressionEditor = false;
+            gridViewTextBoxColumn8.HeaderText = "اسم المجموعة";
+            gridViewTextBoxColumn8.Name = "GroupUserClom";
+            gridViewTextBoxColumn8.Width = 190;
             this.SystemUserGridView.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn1,
-            gridViewTextBoxColumn2,
-            gridViewTextBoxColumn3,
-            gridViewTextBoxColumn4});
+            gridViewTextBoxColumn5,
+            gridViewTextBoxColumn6,
+            gridViewTextBoxColumn7,
+            gridViewTextBoxColumn8});
             this.SystemUserGridView.MasterTemplate.EnableFiltering = true;
             this.SystemUserGridView.Name = "SystemUserGridView";
             this.SystemUserGridView.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -256,43 +263,45 @@
             this.SystemUserGridView.Text = "radGridView2";
             this.SystemUserGridView.ThemeName = "TelerikMetro";
             // 
-            // radMenuItem1
+            // btnNew
             // 
-            this.radMenuItem1.AccessibleDescription = "جديد";
-            this.radMenuItem1.AccessibleName = "جديد";
-            this.radMenuItem1.Name = "radMenuItem1";
-            this.radMenuItem1.Text = "جديد";
-            this.radMenuItem1.Visibility = Telerik.WinControls.ElementVisibility.Visible;
+            this.btnNew.AccessibleDescription = "جديد";
+            this.btnNew.AccessibleName = "جديد";
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Text = "جديد";
+            this.btnNew.Visibility = Telerik.WinControls.ElementVisibility.Visible;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
-            // radMenuItem2
+            // btnAdd
             // 
-            this.radMenuItem2.AccessibleDescription = "اضافة";
-            this.radMenuItem2.AccessibleName = "اضافة";
-            this.radMenuItem2.Name = "radMenuItem2";
-            this.radMenuItem2.Text = "اضافة";
-            this.radMenuItem2.Visibility = Telerik.WinControls.ElementVisibility.Visible;
+            this.btnAdd.AccessibleDescription = "اضافة";
+            this.btnAdd.AccessibleName = "اضافة";
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Text = "اضافة";
+            this.btnAdd.Visibility = Telerik.WinControls.ElementVisibility.Visible;
             // 
-            // radMenuItem3
+            // btnEdit
             // 
-            this.radMenuItem3.AccessibleDescription = "تعديل";
-            this.radMenuItem3.AccessibleName = "تعديل";
-            this.radMenuItem3.Name = "radMenuItem3";
-            this.radMenuItem3.Text = "تعديل";
-            this.radMenuItem3.Visibility = Telerik.WinControls.ElementVisibility.Visible;
+            this.btnEdit.AccessibleDescription = "تعديل";
+            this.btnEdit.AccessibleName = "تعديل";
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Text = "تعديل";
+            this.btnEdit.Visibility = Telerik.WinControls.ElementVisibility.Visible;
             // 
             // radContextMenu1
             // 
             this.radContextMenu1.Items.AddRange(new Telerik.WinControls.RadItem[] {
-            this.radMenuItem1,
-            this.radMenuItem2,
-            this.radMenuItem3});
+            this.btnNew,
+            this.btnAdd,
+            this.btnEdit});
             // 
             // radMenu1
             // 
             this.radMenu1.Items.AddRange(new Telerik.WinControls.RadItem[] {
-            this.radMenuItem1,
-            this.radMenuItem2,
-            this.radMenuItem3});
+            this.btnNew,
+            this.btnAdd,
+            this.btnEdit,
+            this.btnDelete});
             this.radMenu1.Location = new System.Drawing.Point(0, 0);
             this.radMenu1.Name = "radMenu1";
             this.radMenu1.Padding = new System.Windows.Forms.Padding(2, 2, 0, 0);
@@ -300,6 +309,26 @@
             this.radMenu1.TabIndex = 6;
             this.radMenu1.Text = "radMenu1";
             this.radMenu1.ThemeName = "TelerikMetro";
+            // 
+            // lblmsg
+            // 
+            this.lblmsg.AccessibleDescription = "msg";
+            this.lblmsg.AccessibleName = "msg";
+            this.lblmsg.Name = "lblmsg";
+            this.radStatusStrip1.SetSpring(this.lblmsg, false);
+            this.lblmsg.Text = "msg";
+            this.lblmsg.TextAlignment = System.Drawing.ContentAlignment.TopRight;
+            this.lblmsg.TextWrap = true;
+            this.lblmsg.Visibility = Telerik.WinControls.ElementVisibility.Visible;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.AccessibleDescription = "حذف";
+            this.btnDelete.AccessibleName = "حذف";
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Text = "حذف";
+            this.btnDelete.Visibility = Telerik.WinControls.ElementVisibility.Visible;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // frmSystemUser
             // 
@@ -310,14 +339,19 @@
             this.Controls.Add(this.radPanel1);
             this.Controls.Add(this.radMenu1);
             this.Controls.Add(this.radStatusStrip1);
+            this.MaximumSize = new System.Drawing.Size(889, 542);
+            this.MinimumSize = new System.Drawing.Size(889, 542);
             this.Name = "frmSystemUser";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             // 
             // 
             // 
             this.RootElement.ApplyShapeToControl = true;
-            this.Text = "frmSystemUser";
+            this.RootElement.MaxSize = new System.Drawing.Size(889, 542);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "المستخدمين";
             this.ThemeName = "TelerikMetro";
+            this.Load += new System.EventHandler(this.frmSystemUser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.radStatusStrip1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).EndInit();
             this.radPanel1.ResumeLayout(false);
@@ -346,9 +380,9 @@
         #endregion
 
         private Telerik.WinControls.UI.RadStatusStrip radStatusStrip1;
-        private Telerik.WinControls.UI.RadMenuItem radMenuItem1;
-        private Telerik.WinControls.UI.RadMenuItem radMenuItem2;
-        private Telerik.WinControls.UI.RadMenuItem radMenuItem3;
+        private Telerik.WinControls.UI.RadMenuItem btnNew;
+        private Telerik.WinControls.UI.RadMenuItem btnAdd;
+        private Telerik.WinControls.UI.RadMenuItem btnEdit;
         private Telerik.WinControls.UI.RadPanel radPanel1;
         private Telerik.WinControls.UI.RadGroupBox radGroupBox1;
         private Telerik.WinControls.UI.RadLabel radLabel3;
@@ -364,6 +398,8 @@
         private Telerik.WinControls.UI.RadMultiColumnComboBox groupUserComboBox;
         private Telerik.WinControls.UI.RadMenu radMenu1;
         private Telerik.WinControls.Themes.TelerikMetroTheme telerikMetroTheme1;
+        private Telerik.WinControls.UI.RadLabelElement lblmsg;
+        private Telerik.WinControls.UI.RadMenuItem btnDelete;
 
     }
 }

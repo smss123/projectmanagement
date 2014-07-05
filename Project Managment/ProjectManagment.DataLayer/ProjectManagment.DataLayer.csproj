@@ -61,6 +61,20 @@
       <DependentUpon>projectDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Commands\UserGroupCommand\cmdUserGroupCommand.cs" />
+    <Compile Include="Commands\UserGroupCommand\xAccounts.cs" />
+    <Compile Include="Commands\UserGroupCommand\xAttachments.cs" />
+    <Compile Include="Commands\UserGroupCommand\xContracts.cs" />
+    <Compile Include="Commands\UserGroupCommand\xDailyMovements.cs" />
+    <Compile Include="Commands\UserGroupCommand\xEmployees.cs" />
+    <Compile Include="Commands\UserGroupCommand\xGroupPeremitions.cs" />
+    <Compile Include="Commands\UserGroupCommand\xOrders.cs" />
+    <Compile Include="Commands\UserGroupCommand\xPeremetions.cs" />
+    <Compile Include="Commands\UserGroupCommand\xProjectActivities.cs" />
+    <Compile Include="Commands\UserGroupCommand\xProjectExpenses.cs" />
+    <Compile Include="Commands\UserGroupCommand\xProjectProfile.cs" />
+    <Compile Include="Commands\UserGroupCommand\xSubActivities.cs" />
+    <Compile Include="Commands\UserGroupCommand\xSuppliers.cs" />
+    <Compile Include="Commands\UserGroupCommand\xUsersSystem.cs" />
     <Compile Include="Contract.cs">
       <DependentUpon>projectDB.tt</DependentUpon>
     </Compile>

@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 07/01/2014 01:11:08
+-- Date Created: 07/01/2014 17:25:23
 -- Generated from EDMX file: D:\Systems\Xprema systems\projectmanagement\projectmanagement\Project Managment\ProjectManagment.DataLayer\projectDB.edmx
 -- --------------------------------------------------
 
@@ -17,62 +17,62 @@ GO
 -- Dropping existing FOREIGN KEY constraints
 -- --------------------------------------------------
 
-IF OBJECT_ID(N'[dbo].[FK_PermessionUserGroupPermession]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[UserGroupPermessions] DROP CONSTRAINT [FK_PermessionUserGroupPermession];
-GO
-IF OBJECT_ID(N'[dbo].[FK_UserGroupUserGroupPermession]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[UserGroupPermessions] DROP CONSTRAINT [FK_UserGroupUserGroupPermession];
-GO
-IF OBJECT_ID(N'[dbo].[FK_UserGroupSystemUser]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[SystemUsers] DROP CONSTRAINT [FK_UserGroupSystemUser];
-GO
-IF OBJECT_ID(N'[dbo].[FK_SystemUserContract]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[Contracts] DROP CONSTRAINT [FK_SystemUserContract];
-GO
-IF OBJECT_ID(N'[dbo].[FK_EmployeeContract]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[Contracts] DROP CONSTRAINT [FK_EmployeeContract];
-GO
-IF OBJECT_ID(N'[dbo].[FK_ProjectProfileProjectActivity]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[ProjectActivities] DROP CONSTRAINT [FK_ProjectProfileProjectActivity];
-GO
-IF OBJECT_ID(N'[dbo].[FK_ProjectActivityProjectSubActivity]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[ProjectSubActivities] DROP CONSTRAINT [FK_ProjectActivityProjectSubActivity];
-GO
-IF OBJECT_ID(N'[dbo].[FK_ProjectProfileAccount]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[Accounts] DROP CONSTRAINT [FK_ProjectProfileAccount];
-GO
-IF OBJECT_ID(N'[dbo].[FK_ProjectActivityAccount]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[Accounts] DROP CONSTRAINT [FK_ProjectActivityAccount];
-GO
-IF OBJECT_ID(N'[dbo].[FK_ProjectSubActivityAccount]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[Accounts] DROP CONSTRAINT [FK_ProjectSubActivityAccount];
-GO
-IF OBJECT_ID(N'[dbo].[FK_ProjectProfileAttachment]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[Attachments] DROP CONSTRAINT [FK_ProjectProfileAttachment];
-GO
-IF OBJECT_ID(N'[dbo].[FK_ProjectOrderAttachment]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[Attachments] DROP CONSTRAINT [FK_ProjectOrderAttachment];
-GO
-IF OBJECT_ID(N'[dbo].[FK_ProjectProfileProjectOrder]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[ProjectOrders] DROP CONSTRAINT [FK_ProjectProfileProjectOrder];
-GO
 IF OBJECT_ID(N'[dbo].[FK_AccountTransaction]', 'F') IS NOT NULL
     ALTER TABLE [dbo].[Transactions] DROP CONSTRAINT [FK_AccountTransaction];
-GO
-IF OBJECT_ID(N'[dbo].[FK_ProjectProfileContract]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[Contracts] DROP CONSTRAINT [FK_ProjectProfileContract];
-GO
-IF OBJECT_ID(N'[dbo].[FK_ProjectProfileThefinancier]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[Thefinanciers] DROP CONSTRAINT [FK_ProjectProfileThefinancier];
-GO
-IF OBJECT_ID(N'[dbo].[FK_ProjectSubActivityProjectExpens]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[ProjectExpenses] DROP CONSTRAINT [FK_ProjectSubActivityProjectExpens];
 GO
 IF OBJECT_ID(N'[dbo].[FK_ContractAccount]', 'F') IS NOT NULL
     ALTER TABLE [dbo].[Accounts] DROP CONSTRAINT [FK_ContractAccount];
 GO
+IF OBJECT_ID(N'[dbo].[FK_EmployeeContract]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Contracts] DROP CONSTRAINT [FK_EmployeeContract];
+GO
+IF OBJECT_ID(N'[dbo].[FK_PermessionUserGroupPermession]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[UserGroupPermessions] DROP CONSTRAINT [FK_PermessionUserGroupPermession];
+GO
+IF OBJECT_ID(N'[dbo].[FK_ProjectActivityAccount]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Accounts] DROP CONSTRAINT [FK_ProjectActivityAccount];
+GO
+IF OBJECT_ID(N'[dbo].[FK_ProjectActivityProjectSubActivity]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[ProjectSubActivities] DROP CONSTRAINT [FK_ProjectActivityProjectSubActivity];
+GO
 IF OBJECT_ID(N'[dbo].[FK_ProjectExpensSupplier]', 'F') IS NOT NULL
     ALTER TABLE [dbo].[Suppliers] DROP CONSTRAINT [FK_ProjectExpensSupplier];
+GO
+IF OBJECT_ID(N'[dbo].[FK_ProjectOrderAttachment]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Attachments] DROP CONSTRAINT [FK_ProjectOrderAttachment];
+GO
+IF OBJECT_ID(N'[dbo].[FK_ProjectProfileAccount]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Accounts] DROP CONSTRAINT [FK_ProjectProfileAccount];
+GO
+IF OBJECT_ID(N'[dbo].[FK_ProjectProfileAttachment]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Attachments] DROP CONSTRAINT [FK_ProjectProfileAttachment];
+GO
+IF OBJECT_ID(N'[dbo].[FK_ProjectProfileContract]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Contracts] DROP CONSTRAINT [FK_ProjectProfileContract];
+GO
+IF OBJECT_ID(N'[dbo].[FK_ProjectProfileProjectActivity]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[ProjectActivities] DROP CONSTRAINT [FK_ProjectProfileProjectActivity];
+GO
+IF OBJECT_ID(N'[dbo].[FK_ProjectProfileProjectOrder]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[ProjectOrders] DROP CONSTRAINT [FK_ProjectProfileProjectOrder];
+GO
+IF OBJECT_ID(N'[dbo].[FK_ProjectProfileThefinancier]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Thefinanciers] DROP CONSTRAINT [FK_ProjectProfileThefinancier];
+GO
+IF OBJECT_ID(N'[dbo].[FK_ProjectSubActivityAccount]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Accounts] DROP CONSTRAINT [FK_ProjectSubActivityAccount];
+GO
+IF OBJECT_ID(N'[dbo].[FK_ProjectSubActivityProjectExpens]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[ProjectExpenses] DROP CONSTRAINT [FK_ProjectSubActivityProjectExpens];
+GO
+IF OBJECT_ID(N'[dbo].[FK_SystemUserContract]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Contracts] DROP CONSTRAINT [FK_SystemUserContract];
+GO
+IF OBJECT_ID(N'[dbo].[FK_UserGroupSystemUser]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[SystemUsers] DROP CONSTRAINT [FK_UserGroupSystemUser];
+GO
+IF OBJECT_ID(N'[dbo].[FK_UserGroupUserGroupPermession]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[UserGroupPermessions] DROP CONSTRAINT [FK_UserGroupUserGroupPermession];
 GO
 
 -- --------------------------------------------------
@@ -124,11 +124,11 @@ GO
 IF OBJECT_ID(N'[dbo].[Transactions]', 'U') IS NOT NULL
     DROP TABLE [dbo].[Transactions];
 GO
-IF OBJECT_ID(N'[dbo].[UserGroups]', 'U') IS NOT NULL
-    DROP TABLE [dbo].[UserGroups];
-GO
 IF OBJECT_ID(N'[dbo].[UserGroupPermessions]', 'U') IS NOT NULL
     DROP TABLE [dbo].[UserGroupPermessions];
+GO
+IF OBJECT_ID(N'[dbo].[UserGroups]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[UserGroups];
 GO
 
 -- --------------------------------------------------
