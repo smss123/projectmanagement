@@ -9,16 +9,11 @@ using Telerik.WinControls;
 
 namespace ProjectManagment.Forms.Employee
 {
-    public partial class frmEmployee : Telerik.WinControls.UI.RadForm
+    public partial class frmContracts : Telerik.WinControls.UI.RadForm
     {
-        public frmEmployee()
+        public frmContracts()
         {
             InitializeComponent();
-        }
-
-        private void radGroupBox1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
